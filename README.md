@@ -1,5 +1,3 @@
-# Readme_taxi_cab
-
 # New York Taxi-Cab: Deep Learning Time Series Prediction Modeling and Business Case Analysis
 
 # Author
