@@ -44,7 +44,7 @@ For SQL analysis, I used both Green and Yellow Janurary 2021 data for comparison
 
 # 📄 Quick Summary and Key Findings
 ### **Model Performance Comparison**
-![Screenshot](gHR1X5Bhp-clipboard.png)
+![clipboard.png](inkdrop://file:gHR1X5Bhp)
 > **This graph shows different models compared to each other based on the MAE value. Each model is based on their Horizon and Window Size**
 > 
 > - **Naive Model performs the worst as its soley predicting on previous data without learning patterns within the dataset. Due to this, it is unable to reliably generalize**
