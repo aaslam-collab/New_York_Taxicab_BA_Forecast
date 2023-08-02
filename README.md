@@ -14,7 +14,7 @@
 
 
 ## 🌄 Overview:
-The purpose of this assignment is to understand what the data is telling us from a business/data analysis viewpoint and to construct prediction model to forecast future earnings. 
+The purpose of this assignment is to understand what the data is telling us from a business/data analysis viewpoint and to construct a prediction model to forecast future earnings. 
 
 Starting from the business case, the data was inspected from a high to low-level approach. Once we get an understanding of the data of what the data is telling us, we can then start to model to predict future earnings. In this project, rather than using traditional modeling techniques such as using ARIMA or SARIMA models, several deep learning models were used instead. Models such as a basic dense model, Conv1D, and LSTM neural networks. After comparing the performance of  each model, a simple dense model was used for future predictions as it performed the best. As an additional bonus, a separate multivariate analysis was conducted with and without lag for further comparison and analysis. 
 
@@ -22,7 +22,7 @@ Starting from the business case, the data was inspected from a high to low-level
 # 🔢 Data Source
 [New York City's open TLC Taxi Cab data set](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
-For SQL analysis, I used both Green and Yellow Janurary 2021 data for comparison purposes. For the model predictions, I used the Yellow data to make things simple. 
+For SQL analysis, I used both Green and Yellow January 2021 data for comparison purposes. For the model predictions, I used the Yellow data to make things simple. 
 
 # 📚 Jupyter Notebook - Layout
 - **Inspection, Cleaning, Feature Engineering, and Data Exploration of Data**
@@ -71,7 +71,7 @@ We can see that model for **`Multivariate Analysis - Without Lag`** outperformed
 - **`Multivariate Analysis - With Lag`**: Test RMSE: 1.487
 
 Even though the numbers look great, the actual graphs do not show that the model is generalizing properly to the data and that the numbers are a bit misleading.
-- **Without-Lag**: The loss curve shows a lot of stepping where the model is not able to generalize to the data properly and it shows it struggles. Just around epoch 60, it starts to stabilize and it starts to improve. This shows some level of unrepresentative training data for the loss curves.
+- **Without-Lag**: The loss curve shows a lot of stepping where the model is not able to generalize the data properly and it shows it struggles. Just around epoch 60, it starts to stabilize and it starts to improve. This shows some level of unrepresentative training data for the loss curves.
 - **With-Lag**: The loss curve doesn't show stepping, but the train and test loss curves are far apart with a higher RMSE value. Just like **Without-Lag**, this too shows a bit of unrepresentative training as well. 
 
 
@@ -112,7 +112,7 @@ Unrepresentative training occurs when the training dataset is not able to provid
 - With the information provided above, it becomes important to understand the movement of people. This is to ensure that during times of adverse weather conditions, city construction, city planning, and investments into public transportation infrastructure, amongst other conditions, public safety and mobility be a priority to make everyday life easier for citizens. Smart city planning should include business opportunities with contractors to gather data which will enable city planners to ensure new ideas are brought to the table through data and prediction modeling. Being able to predict commute patterns in the future enables city planners and officials to be proactive rather than reactive in their decision-making and future planning of projects
 
 # 🔧 Future Considerations
-- The experiment only **considered 1 month of data**, whereas, New York's TLC datasets go all the way back to 2009. **Future experiments can consider adding all of 2020's taxi data** so that we can have a more accurate prediction for 2021 February to December
+- The experiment only **considered 1 month of data**, whereas, New York's TLC datasets go back to 2009. **Future experiments can consider adding all of 2020's taxi data** so that we can have a more accurate prediction for 2021 February to December
 - **Increasing the complexity of the models** and/or using a **N-Beats model** as outlined in this [paper](https://arxiv.org/pdf/1905.10437.pdf)
 - Instead of deep learning **experiment with models such  as ARIMA**
 - Use **Meta's Prophet Open Source Time series Modeling for Python**
